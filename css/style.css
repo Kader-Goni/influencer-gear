@@ -20,6 +20,7 @@ body{
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 a{
@@ -37,26 +38,23 @@ ul{
 main{
     display: flex;
     align-items: center;
-    /* justify-content: center; */
     flex-direction: column;
 
 }
 .container{
     width: 1200px;
-    /* background-color: whitesmoke; */
 }
 
 .container.collections{
     width: 1050px;
-    /* background-color: whitesmoke; */
 }
-
 
 
 .primary-button{
     color: #FFFFFF;
     background-image: linear-gradient(45deg , var(--brand-color), var(--brand-color2));
     padding: 10px 20px;
+    font-family: var(--heading-font);
     transition: all .4s linear;
     border-radius: 40px;
     -webkit-border-radius: 40px;
@@ -68,6 +66,7 @@ main{
     -ms-transition: all .4s linear;
     -o-transition: all .4s linear;
 }
+
 
 .primary-button:hover{
     background-image: linear-gradient(45deg , var(--brand-color2), var(--brand-color));
@@ -103,6 +102,7 @@ main{
 .menu-list ul li a{
     color: #3A3A3A;
     font-size: 16px;
+    font-family: var(--heading-font);
 }
 
 .menu-list .fa-search , .fa-cart-plus{
@@ -134,6 +134,7 @@ main{
     color: #3A3A3A;
     font-size: 16px;
     font-weight: 600;
+    font-family: var(--heading-font);
     margin: 20px 0 35px;
     
 }
@@ -217,10 +218,10 @@ hr{
 ---------- company logo CSS ends ---------- 
 ========================================*/
 
-.collections .header{
+.header{
     text-align: center;
 }
-.collections .header h1{
+.header h1{
     display: inline-block;
     color: #3A3A3A;
     margin-bottom: 50px;
@@ -310,10 +311,42 @@ hr{
     margin: 50px 0 100px;
     text-align: right;
     cursor: pointer;
+    font-family: var(--heading-font);
 }
 
 /*______________________________________ 
 ---------- collection CSS ends ---------- 
 ========================================*/ 
 
+.contact{
+    width: 1160px;
+    margin-bottom: 50px;
+    /* background-color: #c031ad; */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
 
+.contact-image{
+    display: flex;
+    align-items: center;
+}
+
+.contact-image .image img{
+    width: 550px;
+    height: 330px;
+}
+
+.contact-info form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contact-feild{
+    width: 100%;
+    margin: 8px 0;
+    padding: 8px;
+    font-size: 18px;
+    font-family: inherit;
+    outline: 0;
+    border: 1px solid #FF008E;
+}
