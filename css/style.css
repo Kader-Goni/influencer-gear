@@ -1,10 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Manrope:wght@700&family=Poppins:wght@500;600;700&display=swap');
 
-
 /*______________________________________ 
 ---------- import CSS fonts ---------- 
 ========================================*/
 
+:root{
+    --heading-font: 'Poppins', sans-serif;;
+    --sub-font: 'Inter', sans-serif;
+    --footer-font: 'Manrope', sans-serif;
+    --brand-color: #E02C6D;
+    --brand-color2: #2cd4e0;
+}
+
+body{
+    font-family: var(--heading-font);
+}
 
 
 *{
