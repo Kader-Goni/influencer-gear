@@ -12,10 +12,6 @@
     --brand-color2: #c031ad;
 }
 
-body{
-    font-family: var(--heading-font);
-}
-
 
 *{
     margin: 0;
@@ -84,6 +80,7 @@ main{
 .brand-header{
     color: #3A3A3A;
     font-size: 24px;
+    font-weight: 700;
     font-family: var(--heading-font);
 }
 
@@ -93,6 +90,11 @@ main{
 
 #header nav > ul li{
     margin-right: 34px;
+    transition: all .4s linear;
+    -webkit-transition: all .4s linear;
+    -moz-transition: all .4s linear;
+    -ms-transition: all .4s linear;
+    -o-transition: all .4s linear;
 }
 
 #header nav > ul li:last-child{
@@ -105,9 +107,18 @@ main{
     font-family: var(--heading-font);
 }
 
+#header nav > ul li:hover a{
+    color: var(--brand-color);
+
+    border-bottom: 1px solid violet;
+}
+
 .menu-list .fa-search , .fa-cart-plus{
     font-size: 25px;
     cursor: pointer;
+}
+.fas.fa-cart-plus{
+    color: var(--brand-color);
 }
 
 /*______________________________________ 
@@ -146,17 +157,8 @@ main{
 }
 
 
-.banner-image .image{
-    position: relative;
-    overflow: hidden;
-    box-shadow: 0 0 20px 0 rgba(0, 0, 0, .5);
-    border-radius: 50px;
-    -webkit-border-radius: 50px;
-    -moz-border-radius: 50px;
-    -ms-border-radius: 50px;
-    -o-border-radius: 50px;
-}
 .banner-image .image img{
+    cursor: pointer;
     transition: transform .4s linear;
     transform: scale(1);
     -webkit-transform: scale(1);
@@ -175,6 +177,8 @@ main{
     -ms-transform: scale(1.1);
     -o-transform: scale(1.1);
 }
+
+
 
 
 /*______________________________________ 
@@ -254,9 +258,27 @@ hr{
     -o-border-radius: 10px;
 }
 
+.item-image{
+    width: 300px;
+    overflow: hidden;
+    height: 256px;
+}
 .item-image img{
     width: 300px;
     height: 256px;
+    transition: all .4s linear;
+    -webkit-transition: all .4s linear;
+    -moz-transition: all .4s linear;
+    -ms-transition: all .4s linear;
+    -o-transition: all .4s linear;
+}
+
+.item-image img:hover{
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
 }
 
 .title h2{
@@ -321,7 +343,6 @@ hr{
 .contact{
     width: 1160px;
     margin-bottom: 50px;
-    /* background-color: #c031ad; */
     display: grid;
     grid-template-columns: repeat(2, 1fr);
 }
@@ -336,6 +357,13 @@ hr{
     height: 330px;
 }
 
+.contact-details .header p{
+    color: green;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: var(--heading-font);
+}
+
 .contact-info form{
     display: flex;
     flex-direction: column;
@@ -346,7 +374,83 @@ hr{
     margin: 8px 0;
     padding: 8px;
     font-size: 18px;
-    font-family: inherit;
+    font-family: var(--heading-font);
     outline: 0;
     border: 1px solid #FF008E;
 }
+
+/*______________________________________ 
+---------- contact CSS ends ---------- 
+========================================*/ 
+
+
+footer{
+    height: 240px;
+    background-color: #0A0826;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.footer-details{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-details .heading{
+    color: #FFFFFF;
+    padding-bottom: 15px;
+    line-height: 24px;
+    font-weight: 700;
+    font-family: var(--heading-font);
+}
+
+.footer-details p{
+    color: #D9DBE1;
+    font-size: 14px;
+    line-height: 25px;
+    font-weight: 700;
+    font-family: var(--footer-font);
+}
+
+.footer-details p:last-child{
+    margin-bottom: 25px;
+    color: var(--brand-color2);
+}
+
+.footer-icon a{
+    margin-right: 25px;
+}
+.footer a:last-child{
+    margin-right: 0;
+}
+
+.footer-icon a i{
+    color: #FFFFFF;
+    background-color: rgba(0, 255, 255, 0.2);
+    padding: 8px;
+    font-size: 20px;
+    border-radius: 50%;
+    transition: all .4s linear;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    -webkit-transition: all .4s linear;
+    -moz-transition: all .4s linear;
+    -ms-transition: all .4s linear;
+    -o-transition: all .4s linear;
+}
+
+
+.footer-icon i:hover{
+    color: var(--brand-color);
+}
+
+
+/*______________________________________ 
+---------- footer CSS ends ---------- 
+========================================*/
+
+
