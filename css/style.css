@@ -137,9 +137,10 @@ main{
 
 }
 .banner-text h1{
+    color: #3A3A3A;
     font-size: 52px;
     font-weight: 700;
-    color: #3A3A3A;
+    font-family: var(--heading-font);
 }
 .banner-text p{
     color: #3A3A3A;
